@@ -2,10 +2,10 @@
 [![Code Climate](https://codeclimate.com/github/inertia186/drotto/badges/gpa.svg)](https://codeclimate.com/github/inertia186/drotto)
 [![Test Coverage](https://codeclimate.com/github/inertia186/drotto/badges/coverage.svg)](https://codeclimate.com/github/inertia186/drotto)
 
-drotto
+bakerbob
 ======
 
-[Dr. Otto](https://github.com/inertia186/drotto) is a voting bot that accepts payments for votes.
+[BakerBob](https://github.com/finleyexp/BakerBob) is a voting bot that accepts payments for votes on baking related posts on the STEEM blockchain.
 
 <center>
   <img src="http://i.imgur.com/Hz3YU0k.png" />
@@ -13,7 +13,7 @@ drotto
 
 ---
 
-The default is that Dr. Otto will only vote in 10 batches a day.  Multiple users can bid in a voting batch.  If only one person bids, they get the entire upvote.  If two people bid an equal amount, they share the vote 50/50.  The higher the bid, the higher percentage for the upcoming vote batch.
+The default is that Baker Bob will only vote in 10 batches a day.  Multiple users can bid in a voting batch.  If only one person bids, they get the entire upvote.  If two people bid an equal amount, they share the vote 50/50.  The higher the bid, the higher percentage for the upcoming vote batch.
 
 The bot operator can set any vote weight for the batch, which will affect the number of daily votes to bid on.  Therefore, each day per batch has:
 
@@ -65,7 +65,7 @@ $ gem install bundler
 $ gem install bundler
 ```
 
-I've tested it on various versions of ruby.  The oldest one I got it to work was:
+[inertia186](https://github.com/inertia186/drotto) tested it on various versions of ruby.  The oldest one that work was:
 
 `ruby 2.0.0p645 (2015-04-13 revision 50299) [x86_64-darwin14.4.0]`
 
@@ -82,7 +82,7 @@ $ bundle install
 Edit the `config.yml` file.
 
 ```yaml
-:drotto:
+:bakerbob:
   :block_mode: irreversible
   :account_name: <voting account name here>
   :posting_wif: <posting wif here>
@@ -90,7 +90,8 @@ Edit the `config.yml` file.
   :batch_vote_weight: 100.00 %
   :min_effective_weight: 0.25 %
   :reserve_vote_weight: 0.00 %
-  :minimum_bid: 2.000 SBD
+  :minimum_bid: 0.100 SBD
+  :maximum_bid: 0.500 SBD
   :blacklist: mikethemug
 :chain_options:
   :chain: steem
@@ -111,17 +112,17 @@ Then run it:
 $ rake run
 ```
 
-Dr. Otto will now do it's thing.  Check here to see an updated version of this bot:
+Baker Bob will now do it's thing.  Check here to see an updated version of this bot:
 
 https://github.com/inertia186/drotto
 
 ##### Bounce Mode
 
-Dr. Otto is designed to only vote in such a way that it will never run out of voting power.  Ideally, you should never need to shut down for breaks in order to recharge.  However, if it's ever time for Dr. Otto to take a break for some other reason, `bounce` will return transfers to accounts instead of voting.
+Baker Bob is designed to only vote in such a way that it will never run out of voting power.  Ideally, you should never need to shut down for breaks in order to recharge.  However, if it's ever time for Dr. Otto to take a break for some other reason, `bounce` will return transfers to accounts instead of voting.
 
 For your own safety, it is recommended that you transfer your funds out of your wallet before running this mode.
 
-Dr. Otto will now return the funds as they arrive in the wallet.  You can also just use `bounce_once` to have Dr. Otto make a single pass rather than loop forever until signaled (`^C`).
+Baker Bob will now return the funds as they arrive in the wallet.  You can also just use `bounce_once` to have Baker Bob make a single pass rather than loop forever until signaled (`^C`).
 
 ```bash
 $ rake bounce_once
@@ -200,9 +201,9 @@ https://ripplerm.github.io/steem-servers/
 ## Tests
 
 * Clone the client repository into a directory of your choice:
-  * `git clone https://github.com/inertia186/drotto.git`
+  * `git clone https://github.com/finleyexp/bakerbob.git`
 * Navigate into the new folder
-  * `cd drotto`
+  * `cd bakerbob`
 * Basic tests can be invoked as follows:
   * `rake`
 * To run tests with parallelization and local code coverage:
@@ -210,11 +211,13 @@ https://ripplerm.github.io/steem-servers/
 
 ## Get in touch!
 
-If you're using Dr. Otto, I'd love to hear from you.  Drop me a line and tell me what you think!  I'm @inertia on STEEM and Discord.
+If you're using BakerBob, I'd love to hear from you.  Drop me a line and tell me what you think!  I'm @finleyexp on STEEM and Discord. BakerBob is based off of Dr. Otto by @inertia186 on STEEM and Discord.
   
 ## License
 
-I don't believe in intellectual "property".  If you do, consider Dr. Otto as licensed under a Creative Commons [![CC0](http://i.creativecommons.org/p/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/) License.
+@inertia186 doesn't believe in intellectual "property," but I do. That said, if you also do, then consider Dr. Otto as licensed under a Creative Commons [![CC0](http://i.creativecommons.org/p/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/) License. 
+
+Meanwhile, BakerBob is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License: ![CC BY-SA](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
 
 ---
 
