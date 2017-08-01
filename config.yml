@@ -1,4 +1,4 @@
-:drotto:
+:bakerbob:
   # mode: head - the last block
   # mode: irreversible - the block that is confirmed by 2/3 of all block
   # producers and is thus irreversible!
@@ -31,8 +31,10 @@
   :reserve_vote_weight: 0.00 %
   
   # Minimum bid amount.
-  :minimum_bid: 2.000 SBD
+  :minimum_bid: 0.100 SBD
 
+  # Maximum bid amount.
+  :maximum_bid: 0.500 SBD
   
   # List of account that shall not get votes, separated by spaces.
   :blacklist: mikethemug
