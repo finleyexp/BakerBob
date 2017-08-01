@@ -16,6 +16,6 @@ FAQ
 # Q: Can I get a refund if I don't get an upvote?
 # A: The refund policy is up to the bot operator.
 
-# Q: Can Dr. Otto be used for downvotes?
+# Q: Can Baker Bob be used for downvotes?
 # A: Yes, the bot operator can configure either upvotes or downvotes.
 
