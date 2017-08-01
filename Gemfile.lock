@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    drotto (0.0.1)
+    bakerbob (0.0.1)
       awesome_print
       radiator
       rdiscount
