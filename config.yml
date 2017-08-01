@@ -4,7 +4,7 @@
   # producers and is thus irreversible!
   :block_mode: irreversible
   
-  # Account name for voting.
+  # Account name for voting...bakerbob's steemit account
   :account_name: social
   
   # Posting wif is used to vote reply with a confirm comment.  See
@@ -27,7 +27,7 @@
   
   # This is the amount to of voting weight to reserve in each voting batch.
   # Normally, this should be set to 0.00 % unless this account often casts votes
-  # outside of Dr. Otto.
+  # outside of Baker Bob.
   :reserve_vote_weight: 0.00 %
   
   # Minimum bid amount.
