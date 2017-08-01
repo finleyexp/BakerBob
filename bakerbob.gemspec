@@ -4,15 +4,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'drotto/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'drotto'
-  spec.version = DrOtto::VERSION
-  spec.authors = ['Anthony Martin']
-  spec.email = ['drotto@martin-studio.com']
+  spec.name = 'bakerbob'
+  spec.version = BakerBob::VERSION
+  spec.authors = ['Monique Finley']
+  spec.email = ['mfinley@finleyexperience.com']
 
   spec.summary = %q{Pay-to-play voting bot.}
   spec.description = %q{Where you bid for votes/}
-  spec.homepage = 'https://github.com/inertia186/drotto'
-  spec.license = 'CC0 1.0'
+  spec.homepage = 'https://github.com/finleyexp/bakerbob'
+  spec.license = 'CC BY-SA'
 
   spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test)/}) }
   spec.require_paths = ['lib']
