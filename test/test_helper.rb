@@ -46,7 +46,7 @@ if defined? WebMock
   WebMock.disable_net_connect!(allow_localhost: false, allow: 'codeclimate.com:443')
 end
 
-class DrOtto::Test < MiniTest::Test
+class BakerBob::Test < MiniTest::Test
   def save filename, result
     f = File.open("#{File.dirname(__FILE__)}/support/#{filename}", 'w+')
     f.write(result)
