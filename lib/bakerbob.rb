@@ -5,10 +5,10 @@ require 'yaml'
 
 Bundler.require
 
-module DrOtto
-  require 'drotto/version'
-  require 'drotto/chain'
-  require 'drotto/bounce_job'
+module BakerBob
+  require 'bakerbob/version'
+  require 'bakerbob/chain'
+  require 'bakerbob/bounce_job'
   
   include Chain
   
