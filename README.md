@@ -8,7 +8,7 @@ bakerbob
 [BakerBob](https://github.com/finleyexp/BakerBob) is a voting bot that accepts payments for votes on baking related posts on the STEEM blockchain.
 
 <center>
-  <img src="http://i.imgur.com/Hz3YU0k.png" />
+  <img src="https://cdn.pixabay.com/photo/2017/01/14/13/17/kermit-1979495_640.jpg" />
 </center>
 
 ---
