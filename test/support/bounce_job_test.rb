@@ -1,19 +1,20 @@
 require 'test_helper'
 
-module DrOtto
-  class DrOttoTest < DrOtto::Test
+module BakerBob
+  class BakerBobTest < BakerBob::Test
     include Config
     
     def setup
       override_config(
-        drotto: {
+        bakerbob: {
           block_mode: 'irreversible',
           account_name: 'social',
           posting_wif: '5JrvPrQeBBvCRdjv29iDvkwn3EQYZ9jqfAHzrCyUvfbEbRkrYFC',
           active_wif: '5JrvPrQeBBvCRdjv29iDvkwn3EQYZ9jqfAHzrCyUvfbEbRkrYFC',
           batch_vote_weight: '3.13 %',
           reserve_vote_weight: '0.00 %',
-          minimum_bid: '2.000 SBD',
+          minimum_bid: '0.100 SBD',
+          maximum_bid: '0.500 SBD',
           blacklist: 'mikethemug'
         }, chain_options: {
           chain: 'steem',
