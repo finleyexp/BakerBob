@@ -1,19 +1,20 @@
 require 'test_helper'
 
-module DrOtto
-  class ChainTest < DrOtto::Test
+module BakerBob
+  class ChainTest < BakerBob::Test
     include Chain
     
     def setup
       override_config(
-        drotto: {
+        bakerbob: {
           block_mode: 'irreversible',
           account_name: 'social',
           posting_wif: '5JrvPrQeBBvCRdjv29iDvkwn3EQYZ9jqfAHzrCyUvfbEbRkrYFC',
           active_wif: '5JrvPrQeBBvCRdjv29iDvkwn3EQYZ9jqfAHzrCyUvfbEbRkrYFC',
           batch_vote_weight: '3.13 %',
           reserve_vote_weight: '0.00 %',
-          minimum_bid: '2.000 SBD',
+          minimum_bid: '0.100 SBD',
+          maximum_bid: '0.500 SBD',
           blacklist: 'mikethemug'
         }, chain_options: {
           chain: 'steem',
@@ -61,7 +62,7 @@ module DrOtto
         permlink: 'permlink',
         parent_permlink: 'parent_permlink',
         parent_author: 'parent_author',
-        amount: '2.000 SBD',
+        amount: '0.200 SBD',
         timestamp: 'timestamp',
         trx_id: 'id'
       }
@@ -72,7 +73,7 @@ module DrOtto
         permlink: 'permlink',
         parent_permlink: 'parent_permlink',
         parent_author: 'parent_author',
-        amount: '0.200 SBD',
+        amount: '0.020 SBD',
         timestamp: 'timestamp',
         trx_id: 'id'
       }
@@ -83,7 +84,7 @@ module DrOtto
         permlink: 'permlink',
         parent_permlink: 'parent_permlink',
         parent_author: 'parent_author',
-        amount: '0.020 SBD',
+        amount: '0.002SBD',
         timestamp: 'timestamp',
         trx_id: 'id'
       }
@@ -94,7 +95,7 @@ module DrOtto
         permlink: 'permlink',
         parent_permlink: 'parent_permlink',
         parent_author: 'parent_author',
-        amount: ['2.000 SBD', '0.200 SBD', '0.020 SBD'],
+        amount: ['0.200 SBD', '0.020 SBD', '0.002 SBD'],
         timestamp: 'timestamp',
         trx_id: 'id'
       }
