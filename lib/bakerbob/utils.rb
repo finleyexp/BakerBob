@@ -1,7 +1,7 @@
 require 'rdiscount'
 
-module DrOtto
-  require 'drotto/config'
+module BakerBob
+  require 'bakerbob/config'
   
   module Utils
     include Config
