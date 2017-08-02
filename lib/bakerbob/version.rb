@@ -1,4 +1,4 @@
-module DrOtto
+module BakerBob
   VERSION = '0.0.1'
-  AGENT_ID = "drotto/#{VERSION}"
+  AGENT_ID = "bakerbob/#{VERSION}"
 end
