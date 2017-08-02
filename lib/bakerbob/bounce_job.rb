@@ -1,4 +1,4 @@
-module DrOtto
+module BakerBob
   class BounceJob
     include Chain
     
