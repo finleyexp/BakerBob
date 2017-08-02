@@ -1,5 +1,5 @@
-module DrOtto
-  require 'drotto/utils'
+module BakerBob
+  require 'bakerbob/utils'
   
   VOTE_RECHARGE_PER_DAY = 20.0
   VOTE_RECHARGE_PER_HOUR = VOTE_RECHARGE_PER_DAY / 24
@@ -251,7 +251,7 @@ module DrOtto
               permlink: "re-#{author.gsub(/[^a-z0-9\-]+/, '-')}-#{permlink}-#{Time.now.utc.strftime('%Y%m%dt%H%M%S%Lz')}", # e.g.: 20170225t235138025z
               title: '',
               body: merge(merge_options),
-              json_metadata: "{\"tags\":[\"#{parent_permlink}\"],\"app\":\"#{DrOtto::AGENT_ID}\"}",
+              json_metadata: "{\"tags\":[\"#{parent_permlink}\"],\"app\":\"#{BakerBob::AGENT_ID}\"}",
               parent_author: author
             }
             
